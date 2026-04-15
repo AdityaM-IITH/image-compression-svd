@@ -1,0 +1,21 @@
+\begin{table}[htbp]
+\centering
+\caption{Frobenius Approximation Error $\|A - A_k\|_F$ and Relative Error (\%) for Different Images}
+\begin{tabular}{c|cc|cc|cc}
+\hline
+\multirow{2}{*}{$k$} &
+\multicolumn{2}{c|}{\texttt{globe.jpg}} &
+\multicolumn{2}{c|}{\texttt{einstein.jpg}} &
+\multicolumn{2}{c}{\texttt{greyscale.png}} \\
+\cline{2-7}
+ & $\|A - A_k\|_F$ & Rel. (\%) & $\|A - A_k\|_F$ & Rel. (\%) & $\|A - A_k\|_F$ & Rel. (\%) \\
+\hline
+10  & 69050.24 & 100.00 & 17296.45 & 100.00 & 113081.97 & 100.00 \\
+20  & 67129.67 & 97.21  & 5231.19  & 30.24  & 82509.43  & 72.96  \\
+50  & 50535.05 & 73.19  & 2987.27  & 17.27  & 42822.57  & 37.86  \\
+100 & 46425.47 & 67.22  & 642.64   & 3.72   & 7088.10   & 6.27   \\
+200 & 46690.58 & 67.63  & ---      & ---    & 3127.50   & 2.76   \\
+\hline
+\end{tabular}
+\label{tab:svd_frobenius_all}
+\end{table}
